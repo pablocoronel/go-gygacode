@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// Solo asi se declara fuera de una funcion
+var variableImprimir = "Hola"
+
 func main() {
 	// Nombrado de variables
 	// Empieza con letra, o guion bajo, puede contener numeros
@@ -32,5 +35,9 @@ func main() {
 	fmt.Println(direccion)
 
 	// Scope de variables (alcance)
+	imprimir()
+}
 
+func imprimir() {
+	fmt.Println("Desde la funcion imprimir", variableImprimir)
 }
